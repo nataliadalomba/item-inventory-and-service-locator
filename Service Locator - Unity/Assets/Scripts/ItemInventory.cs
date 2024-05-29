@@ -24,7 +24,7 @@ public class ItemInventory : MonoBehaviour {
         }
 
         for (int i = 0; i < slots.Length; i++) {
-            GameObject slot = Instantiate(slotPrefab, gridParent);
+            GameObject slot = Instantiate(slotPrefab, transform);
             Debug.Log("Instantiated slot: " + i);
 
             Item item = slots[i];
