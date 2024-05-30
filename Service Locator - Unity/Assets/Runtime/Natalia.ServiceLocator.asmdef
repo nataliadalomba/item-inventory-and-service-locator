@@ -1,9 +1,7 @@
 {
-    "name": "SWS.ItemInventoryPrototype",
-    "rootNamespace": "SWS.ItemInventoryPrototype",
-    "references": [
-        "SWS.ServiceLocator"
-    ],
+    "name": "Natalia.ServiceLocator",
+    "rootNamespace": "Natalia.ServiceLocator",
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

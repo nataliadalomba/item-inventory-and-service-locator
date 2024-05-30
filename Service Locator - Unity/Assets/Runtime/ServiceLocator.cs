@@ -38,14 +38,14 @@ public class ServiceLocator : MonoBehaviour {
         return service;
     }
 
-    public bool AddService<T>(T service) where T : MonoBehaviour {
+    public bool AddRuntimeSystem<T>(T service) where T : MonoBehaviour {
         if (services.Contains(service))
             return false;
         services.Add(service);
         return true;
     }
 
-    public bool RemoveService<T>(T service) where T : MonoBehaviour {
+    public bool RemoveRuntimeSystem<T>(T service) where T : MonoBehaviour {
         return services.Remove(service);
     }
 }
