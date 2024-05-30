@@ -8,6 +8,15 @@ public class ItemInventory : MonoBehaviour {
     public GameObject slotPrefab;
     public Transform gridParent; //reference to GridLayoutGroup's transform
 
+    private void Awake() {
+        ServiceLocator.Instance.AddService(this);
+    }
+
+    private void OnDestroy() {
+        if (ServiceLocator.Instance != null)
+            ServiceLocator.Instance.RemoveService(this);
+    }
+
     private void Start() {
         PopulateGrid();
     }
