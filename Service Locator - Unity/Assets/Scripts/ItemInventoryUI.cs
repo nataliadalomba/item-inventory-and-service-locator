@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 
 [System.Serializable]
-public class ItemInventory : MonoBehaviour {
+public class ItemInventoryUI : MonoBehaviour {
     public Item[] slots;
     public GameObject slotPrefab;
     public Transform gridParent; //reference to GridLayoutGroup's transform
